@@ -1,12 +1,8 @@
-let s:save_cpo = &cpo
-set cpo&vim
-
-
 function! s:SID_PREFIX()
   return matchstr(expand('<sfile>'), '<SNR>\d\+_\zeSID_PREFIX$')
 endfunction
 
-function! s:tabline()
+function! s:my_tabline()
   let s = ''
   for i in range(1, tabpagenr('$'))
     let bufnrs = tabpagebuflist(i)
@@ -25,7 +21,7 @@ function! s:tabline()
   return s
 endfunction
 
-let &tabline = '%!'. s:SID_PREFIX() . 'tabline()'
+let &tabline = '%!'. s:SID_PREFIX() . 'my_tabline()'
 
 " select tab with numbers(1..9)
 for n in range(1, 9)
@@ -40,7 +36,3 @@ nnoremap <silent> tx :tabclose<CR>
 nnoremap <silent> tn :tabnext<CR>
 " tp select previous tab
 nnoremap <silent> tp :tabprevious<CR>
-
-
-let &cpo = s:save_cpo
-unlet s:save_cpo
