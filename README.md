@@ -1,5 +1,7 @@
 #  vim-tabs
 
+## About
+
 This plugin provides key binds to make it easy to create and go to vim tabs.
 
 This plugin is based on article presented in Qiita(<http://qiita.com/wadako111/items/755e753677dd72d8036d>).
