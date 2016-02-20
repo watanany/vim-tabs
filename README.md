@@ -1,7 +1,8 @@
 #  vim-tabs
 
-This plugin is based on article presented in Qiita.
-<http://qiita.com/wadako111/items/755e753677dd72d8036d>
+This plugin provides key binds to make it easy to create and go to vim tabs.
+
+This plugin is based on article presented in Qiita(<http://qiita.com/wadako111/items/755e753677dd72d8036d>).
 
 ## Settings
 If you use NeoBundle, what you do is just to write
