@@ -2,7 +2,7 @@ function! s:SID_PREFIX()
   return matchstr(expand('<sfile>'), '<SNR>\d\+_\zeSID_PREFIX$')
 endfunction
 
-function! s:my_tabline()
+function! s:tabline()
   let s = ''
   for i in range(1, tabpagenr('$'))
     let bufnrs = tabpagebuflist(i)
@@ -21,7 +21,7 @@ function! s:my_tabline()
   return s
 endfunction
 
-let &tabline = '%!'. s:SID_PREFIX() . 'my_tabline()'
+let &tabline = '%!'. s:SID_PREFIX() . 'tabline()'
 
 " select tab with numbers(1..9)
 for n in range(1, 9)
