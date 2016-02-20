@@ -14,7 +14,7 @@ NeoBundle 'watanany/vim-tabs'
 * t + c
   * create tab
 * t + x
-  * close tab
+  * close current tab
 * t + [Number]
   * go to numbered tab
 * t + n
